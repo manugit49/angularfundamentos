@@ -1,0 +1,10 @@
+.par{
+    /*color de fondo blanco*/
+    color: blue;
+    font-weight: bold;
+}
+
+.impar{
+    color: red;
+    font-weight: bold;
+}
