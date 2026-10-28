@@ -1,0 +1,9 @@
+<h1>Sumar numeros component</h1>
+<form #formSumar="ngForm">
+    <span style="font-family: Arial, Helvetica, sans-serif;">Introduzca un numero:</span> <input type="number" name="cajanumero1" #cajanumero1/><br/>
+    <span style="font-family: Arial, Helvetica, sans-serif;">Introduzca un numero:</span> <input type="number" name="cajanumero2" #cajanumero2/><br/>
+    <button (click)="sumarNumeros()">
+        Sumar numeros
+    </button>
+    <h2 style="color: red; font-family: Verdana, Geneva, Tahoma, sans-serif;">{{suma}}</h2>
+</form>

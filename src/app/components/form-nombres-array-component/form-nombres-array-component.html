@@ -1,0 +1,13 @@
+<h1>Component de Array de nombres</h1>
+<form #formNombres="ngForm">
+    Introduzca un nombre: <input type="text" name="cajanombre" #cajanombre/><br/>
+    <button (click)="insertarNombre()">
+        Insertar nombre
+    </button>
+</form>
+<h3 style="color: red;">Tienes {{nombres.length}} nombres</h3>
+<ul>
+    @for (nombre of nombres; track nombre) {
+        <li>{{nombre}}</li>
+    }    
+</ul>

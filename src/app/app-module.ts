@@ -8,6 +8,12 @@ import { TercerComponent } from './components/tercercomponent/tercercomponent';
 import { EventosComponent } from './components/eventoscomponent/eventoscomponent';
 import { DirectivasComponent } from './components/directivascomponent/directivascomponent';
 import { NumerosEstilosComponent } from './components/numerosestiloscomponent/numerosestiloscomponent';
+import { TestComponent } from './components/test-component/test-component';
+import { FormsModule } from '@angular/forms';
+import { FormSaludoComponent } from './components/form-saludo-component/form-saludo-component';
+import { FormDobleComponent } from './components/form-doble-component/form-doble-component';
+import { SumarNumerosComponent } from './components/sumar-numeros-component/sumar-numeros-component';
+import { FormNombresArrayComponent } from './components/form-nombres-array-component/form-nombres-array-component';
 
 @NgModule({
   declarations: [
@@ -17,15 +23,15 @@ import { NumerosEstilosComponent } from './components/numerosestiloscomponent/nu
     TercerComponent,
     EventosComponent,
     DirectivasComponent,
-    NumerosEstilosComponent
+    NumerosEstilosComponent,
+    TestComponent,
+    FormSaludoComponent,
+    FormDobleComponent,
+    SumarNumerosComponent,
+    FormNombresArrayComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

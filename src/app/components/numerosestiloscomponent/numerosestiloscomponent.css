@@ -2,9 +2,22 @@
     /*color de fondo blanco*/
     color: blue;
     font-weight: bold;
+    background-color: lightgreen;
+}
+
+.par::after {
+    margin-right: 10px;
+    z-index: -1;
+
 }
 
 .impar{
     color: red;
     font-weight: bold;
+    background-color: cyan;
+}
+
+.impar::after {
+    margin-right: 10px;
+    z-index: -1;
 }
