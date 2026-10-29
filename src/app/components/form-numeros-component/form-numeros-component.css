@@ -1,7 +1,11 @@
 .positivo{
     color: blue;
+    background-color: lightgreen;
+    font-weight: bold;
 }
 
 .negativo{
     color: red;
+    background-color: salmon;
+    font-weight: bold;
 }
