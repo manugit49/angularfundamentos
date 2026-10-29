@@ -1,0 +1,18 @@
+<h1>Component de números</h1>
+<form #formNumeros="ngForm">
+    <input type="text" name="cajanumero" #cajanumero/><br/>
+    <button (click)="mostrarNumeros()">
+        Mostrar números
+    </button>
+</form>
+<h3 style="color: red;">Tienes {{numeros.length}} números</h3>
+<ul>
+    @for (numero of numeros; track numero) {
+        <li [ngClass]="{
+            positivo: numero < 0,
+            negativo: numero > 0
+        }">
+        {{numero}}
+        </li>
+    }    
+</ul>
